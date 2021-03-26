@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Web Covid</title>
+<link href="Style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<header>
+  <h1>EDU-COVID</h1>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Pencegahan.html">Pencegahan COVID-19</a></li>
+      <li><a href="Data.html">Data dan Statistik</a></li>
+      <li><a href="Kuis.html">Kuis</a></li>
+      <li><a href="Kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+  <p>Halaman ini berisi pertanyaan-pertanyaan yang menguji pengetahuan pengunjung berkaitan dengan virus COVID-19 dan pencegahannya</p>
+  <p>Pengunjung diminta untuk mengerjakan kuis dengan waktu 10 detik</p>
+  <p>Harap mengklik "Kuis dimulai!" dibawah ini
+        <div id="start">Kuis dimulai!</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    <script src="quiz.js"></script>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
